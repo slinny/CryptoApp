@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		930982DD29496D5B009C68AA /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930982DC29496D5B009C68AA /* CoinImageView.swift */; };
+		9339AD312A9A5F8400BD065A /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339AD302A9A5F8400BD065A /* PortfolioView.swift */; };
+		9339AD332A9A618500BD065A /* XMarksButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339AD322A9A618500BD065A /* XMarksButton.swift */; };
 		9348085E298C24F600A8A796 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348085D298C24F600A8A796 /* StatisticModel.swift */; };
 		93480861298C27B700A8A796 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93480860298C27B700A8A796 /* StatisticView.swift */; };
 		93480863298C4AA300A8A796 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93480862298C4AA300A8A796 /* HomeStatsView.swift */; };
@@ -33,10 +35,13 @@
 		93E7038329353A7500F97733 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E7038229353A7500F97733 /* Double.swift */; };
 		93E7038529359CE000F97733 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E7038429359CE000F97733 /* HomeViewModel.swift */; };
 		93E703882938825000F97733 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E703872938825000F97733 /* CoinDataService.swift */; };
+		93F6C09F2AD9A0E70011E2EE /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6C09E2AD9A0E70011E2EE /* CoinLogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		930982DC29496D5B009C68AA /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
+		9339AD302A9A5F8400BD065A /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		9339AD322A9A618500BD065A /* XMarksButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarksButton.swift; sourceTree = "<group>"; };
 		9348085D298C24F600A8A796 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		93480860298C27B700A8A796 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		93480862298C4AA300A8A796 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		93E7038229353A7500F97733 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		93E7038429359CE000F97733 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		93E703872938825000F97733 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		93F6C09E2AD9A0E70011E2EE /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			children = (
 				930982DC29496D5B009C68AA /* CoinImageView.swift */,
 				937DA647297625BC00ECB108 /* CoinImageViewModel.swift */,
+				93F6C09E2AD9A0E70011E2EE /* CoinLogoView.swift */,
 			);
 			path = CoinImage;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 				93E703712932144A00F97733 /* HomeView.swift */,
 				93E7037E2933274800F97733 /* CoinRowView.swift */,
 				93480862298C4AA300A8A796 /* HomeStatsView.swift */,
+				9339AD302A9A5F8400BD065A /* PortfolioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 				93E7037429321DB800F97733 /* CircleButton */,
 				9361990A29884317000EE010 /* SearchBarView.swift */,
 				93480860298C27B700A8A796 /* StatisticView.swift */,
+				9339AD322A9A618500BD065A /* XMarksButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -251,7 +260,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					93E703492931DDF700F97733 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -310,10 +319,13 @@
 				9361990B29884317000EE010 /* SearchBarView.swift in Sources */,
 				9361D04729448002005BC488 /* NetworkingManager.swift in Sources */,
 				93480863298C4AA300A8A796 /* HomeStatsView.swift in Sources */,
+				93F6C09F2AD9A0E70011E2EE /* CoinLogoView.swift in Sources */,
 				93480867298C668D00A8A796 /* MarketDataService.swift in Sources */,
 				93E703782932263B00F97733 /* CircleButtonAnimationView.swift in Sources */,
+				9339AD332A9A618500BD065A /* XMarksButton.swift in Sources */,
 				937DA648297625BC00ECB108 /* CoinImageViewModel.swift in Sources */,
 				93E703812933330700F97733 /* PreviewProvider.swift in Sources */,
+				9339AD312A9A5F8400BD065A /* PortfolioView.swift in Sources */,
 				93E7038329353A7500F97733 /* Double.swift in Sources */,
 				937DA64629761DE200ECB108 /* CoinImageService.swift in Sources */,
 				93E7037B2932A2E900F97733 /* CoinModel.swift in Sources */,
@@ -356,9 +368,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -414,9 +428,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -440,6 +456,7 @@
 				CODE_SIGN_ENTITLEMENTS = CryptoApp/CryptoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
 				DEVELOPMENT_TEAM = PRAK7FCXFF;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -478,6 +495,7 @@
 				CODE_SIGN_ENTITLEMENTS = CryptoApp/CryptoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
 				DEVELOPMENT_TEAM = PRAK7FCXFF;
 				ENABLE_HARDENED_RUNTIME = YES;
