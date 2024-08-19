@@ -34,9 +34,9 @@ class HomeViewModel : ObservableObject {
         
         // update allCoins
         $searchText
-            .combineLatest(coinDataService.$allCoins)
+            .combineLatest(coinDataService.$allCoins, $sortOption)
             .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
-            .map(filterCoins)
+            .map(filterAndSortCoins)
             .sink { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
             }
@@ -74,6 +74,12 @@ class HomeViewModel : ObservableObject {
         HapticManager.notification(type: .success)
     }
     
+    private func filterAndSortCoins(text: String, coins: [CoinModel], sort: SortOption) -> [CoinModel] {
+        var updatedCoins = filterCoins(text: text, coins: coins)
+        sortCoins(sort: sort, coins: &updatedCoins)
+        return updatedCoins
+    }
+    
     private func filterCoins(text: String, coins: [CoinModel]) -> [CoinModel] {
         guard !text.isEmpty else {
             return coins
@@ -81,10 +87,10 @@ class HomeViewModel : ObservableObject {
         
         let lowercasedText = text.lowercased()
         
-        return coins.filter { (coin) -> Bool in
-            return coin.name.lowercased().contains(lowercasedText) ||
-            coin.symbol.lowercased().contains(lowercasedText) ||
-            coin.id.lowercased().contains(lowercasedText)
+        return coins.filter {
+            $0.name.lowercased().contains(lowercasedText) ||
+            $0.symbol.lowercased().contains(lowercasedText) ||
+            $0.id.lowercased().contains(lowercasedText)
         }
     }
     
