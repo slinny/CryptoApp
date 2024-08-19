@@ -15,6 +15,7 @@
 		93480863298C4AA300A8A796 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93480862298C4AA300A8A796 /* HomeStatsView.swift */; };
 		93480865298C579200A8A796 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93480864298C579200A8A796 /* MarketDataModel.swift */; };
 		93480867298C668D00A8A796 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93480866298C668D00A8A796 /* MarketDataService.swift */; };
+		9357AF022C7303AF008C245E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357AF012C7303AF008C245E /* HapticManager.swift */; };
 		9361990B29884317000EE010 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361990A29884317000EE010 /* SearchBarView.swift */; };
 		9361990D298875A3000EE010 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361990C298875A3000EE010 /* UIApplication.swift */; };
 		9361D04729448002005BC488 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361D04629448001005BC488 /* NetworkingManager.swift */; };
@@ -49,6 +50,7 @@
 		93480862298C4AA300A8A796 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		93480864298C579200A8A796 /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
 		93480866298C668D00A8A796 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
+		9357AF012C7303AF008C245E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		9361990A29884317000EE010 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		9361990C298875A3000EE010 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		9361D04629448001005BC488 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				9361D04629448001005BC488 /* NetworkingManager.swift */,
 				937DA6492976359B00ECB108 /* LocalFileManager.swift */,
+				9357AF012C7303AF008C245E /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				93E7037629321DDD00F97733 /* CircleButtonView.swift in Sources */,
 				93E7036B2931F6E100F97733 /* Color.swift in Sources */,
 				9361990B29884317000EE010 /* SearchBarView.swift in Sources */,
+				9357AF022C7303AF008C245E /* HapticManager.swift in Sources */,
 				9361D04729448002005BC488 /* NetworkingManager.swift in Sources */,
 				93480863298C4AA300A8A796 /* HomeStatsView.swift in Sources */,
 				93F6C09F2AD9A0E70011E2EE /* CoinLogoView.swift in Sources */,
