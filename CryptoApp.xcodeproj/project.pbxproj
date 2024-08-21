@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		930982DD29496D5B009C68AA /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930982DC29496D5B009C68AA /* CoinImageView.swift */; };
+		931E92872C7678100042DDF0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E92862C7678100042DDF0 /* SettingsView.swift */; };
+		931E928A2C7679E10042DDF0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E92892C7679E10042DDF0 /* Constants.swift */; };
 		9330F6562C752C3C00C00222 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330F6552C752C3C00C00222 /* DetailViewModel.swift */; };
 		9330F65B2C752C8900C00222 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330F65A2C752C8900C00222 /* DetailView.swift */; };
 		9330F65D2C752CB900C00222 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330F65C2C752CB900C00222 /* ChartView.swift */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		930982DC29496D5B009C68AA /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
+		931E92862C7678100042DDF0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		931E92892C7679E10042DDF0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9330F6552C752C3C00C00222 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		9330F65A2C752C8900C00222 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9330F65C2C752CB900C00222 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,30 @@
 			path = CoinImage;
 			sourceTree = "<group>";
 		};
+		931E92842C7677E90042DDF0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				931E92852C7677F40042DDF0 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		931E92852C7677F40042DDF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				931E92862C7678100042DDF0 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		931E92882C7679C10042DDF0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				931E92892C7679E10042DDF0 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		9330F6542C752C1500C00222 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				93E7034D2931DDF700F97733 /* CryptoAppApp.swift */,
+				931E92882C7679C10042DDF0 /* Common */,
 				9361D04529447FB5005BC488 /* Utilities */,
 				93E7036C2931F70E00F97733 /* Extensions */,
 				93E703862938820400F97733 /* Services */,
@@ -209,6 +238,7 @@
 				93E7037329321D9800F97733 /* Components */,
 				93E7036E293213E900F97733 /* Home */,
 				93E5B3462C740F9700EC2361 /* Detail */,
+				931E92842C7677E90042DDF0 /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -376,6 +406,7 @@
 				9361990B29884317000EE010 /* SearchBarView.swift in Sources */,
 				9357AF022C7303AF008C245E /* HapticManager.swift in Sources */,
 				9361D04729448002005BC488 /* NetworkingManager.swift in Sources */,
+				931E928A2C7679E10042DDF0 /* Constants.swift in Sources */,
 				93480863298C4AA300A8A796 /* HomeStatsView.swift in Sources */,
 				93F6C09F2AD9A0E70011E2EE /* CoinLogoView.swift in Sources */,
 				93480867298C668D00A8A796 /* MarketDataService.swift in Sources */,
@@ -393,6 +424,7 @@
 				937DA64629761DE200ECB108 /* CoinImageService.swift in Sources */,
 				93E7037B2932A2E900F97733 /* CoinModel.swift in Sources */,
 				93D5542C2ADECE1A00DEC1F0 /* PortfolioDataService.swift in Sources */,
+				931E92872C7678100042DDF0 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
